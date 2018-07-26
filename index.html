@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Vote For Cats Or Dogs</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <script src="index.js" type="text/javascript"></script>
+  </head>
+
+      <body>
+        <div class="hero-image">
+      <div class="hero-text">
+        <h1>Let's Settle This Once And For All</h1>
+        <p>Whch One Do You Prefer? Cats Or Dogs?</p>
+        <button onclick="toggleVoteContainer()">Vote</button>
+      </div>
+    </div>
+
+    <div id="vote container">
+      <div id="cats-container" class="voting">
+        <div class="carousel" id="cats-carousel"onclick="changeImage(this)">
+          <img src="https://metrouk2.files.wordpress.com/2018/04/tucker-and-finley.jpg" alt="cat image"/>
+        </div>
+
+        <div class="likes">
+            <i class="fas fa-heart"onclick="increasedLikes(this)">0</i> Likes
+        </div>
+      </div>
+
+    <div id="dogs-container" class="voting">
+          <div class="carousel" id= "dogs-carousel"onclick="changeImage(this)">
+            <img src="http://cushingsindogs.com/wp-content/uploads/2018/02/CID-website-Survey-Page.jpg" alt="dog image"/>
+          </div>
+
+          <div class="likes">
+              <i class="fas fa-heart"onclick="increasedLikes(this)">0</i> Likes
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
